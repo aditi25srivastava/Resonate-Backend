@@ -1,0 +1,84 @@
+name: Bug Report
+description: create a report to help us reproduce and fix the bug
+title: "[bug]:"
+labels : ["bug", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: >
+        #### Before submitting a bug, please make sure the issue hasn't been already addressed by searching through [the existing and past issues](https://github.com/AOSSIE-Org/Resonate-Backend/issues?q=is%3Aissue+sort%3Acreated-desc)
+
+  - type: input
+    id: description
+    attributes:
+      label: Description of the bug
+      description: a clear and concise description of what the bug is.
+      placeholder: |
+        What happened? What did you expect?
+    validations:
+      required: true   
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to reproduce
+      description: steps to reproduce the behavior, ideally with a minimal code example.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true   
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: what you expected to happen.
+      placeholder: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: what you expected to happen.
+      placeholder: A clear and concise description of what you expected to happen.
+    validations:
+      required: true    
+
+  - type: textarea
+    id: sample_code
+    attributes:
+      label: Minimal reprpoducible example
+      description: Smallest code snippet that reproduces the issue, if applicable.
+      placeholder: Paste only the minimal code required
+      render: shell 
+
+  - type: input 
+    id: environment
+    attributes:
+      label: Enviornment
+      description: OS, runtime, versions (Node/Flutter, etc.), or other relevant information.
+      placeholder: macaOS 14, Node 20.11, Chrome 128
+
+
+  - type: checkbox 
+    id: checks
+    attributes:
+      label: Checks
+      option:
+      - label: I have searched the existing issues to make sure this has not been reported yet.
+        required: true
+      - label: I have read the guidelines for contributing linked to in the repository README.
+        required: true
+
+
+  - type: input 
+    attributes:
+      value: |
+        Thanks for contributing 🎉!       
