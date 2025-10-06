@@ -1,0 +1,48 @@
+name:  Documentation Issue
+description: Report problems or improvements for the documentation
+title: "[Docs]:"
+labels : ["documentation"]
+assignees: []
+ 
+body:
+  - type: markdown
+    attributes:
+      value: >
+        #### Thnak you for taking the time to help us improve the documentation! Please provide as much detail as possible to help us understand and address the issue.
+
+  - type: input
+    id: page_url
+    attributes:
+      label: page or section URL
+      description: the URL or the file path of the documentation page or section where you found the issue.
+      placeholder: e.g., docs/CONTRIBUTING.md or https://resonate.readthedocs.io/en/latest/CONTRIBUTING.html
+    validations:
+      required: true  
+
+  - type: textarea
+    id: what_is_wrong
+    attributes:
+      label: What is wrong or could be improved?
+      description: describe what is wrong or could be improved in the documentation.
+      placeholder: Description of the issue or improvement.
+    validations:
+      required: true     
+
+  - type: textarea
+    id: prposed_change
+    attributes:
+      label: Proposed change or improvement
+      description: paste or describe the proposed change or improvement.
+      placeholder: suggested change or improvement.
+    validations:
+      required: true       
+  
+  - type: textarea
+    id: references
+    attributes:
+      label: References or examples
+      description: links to relevant resources, examples, or references that support your proposed change or improvement.
+      placeholder: optional references or examples.
+    validations:
+      required: true  
+      
