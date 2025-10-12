@@ -1,0 +1,34 @@
+body:
+  - type: textarea
+    id: feature_request_intro
+    attributes:
+      label: Feature Request Details
+      description: >
+             Please provide as much detail as possible to help us understand and evaluate your feature request.
+      validations: |
+        required: true
+
+  - type: checkboxes
+    id: focus_area
+    attributes:
+      label: Area of Focus
+      option:
+        - label: Core Functionality
+          value: core_functionality
+        - label: Performance Optimization
+          value: performance_optimization
+        - label: User Interface/Experience
+          value: ui_ux
+        - label: Documentation
+          value: documentation
+        - label: Testing and Quality Assurance
+          value: testing_quality_assurance
+        - label: Deployment and Infrastructure
+          value: deployment_infrastructure
+        - label: Security Enhancements
+          value: security_enhancements
+        - label: New Feature Addition
+          value: new_feature_addition
+        - label: Other (please specify below)
+          validations:
+            required: true 

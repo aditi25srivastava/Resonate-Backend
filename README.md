@@ -2,7 +2,7 @@
 
 ### This project is divided into two repositories:
 
-1. [Resonate Flutter App](https://github.com/AOSSIE-Org/Resonate)
+1. [Resonate Flutter App](https://github.com/AOSSIE-Org/Resonate) 
 2. Resonate Backend (You are here)
 
 Go to [this repository](https://github.com/AOSSIE-Org/Resonate) to know more about the project.
