@@ -1,0 +1,50 @@
+name:  Feature Request
+description: Suggest new features or improvements
+title: "[Feature]:"
+labels : ["enhancement", "needs-triage"]
+assignees: []
+ 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        #### Thank you for taking the time to help us improve Resonate! Please provide as much detail as possible to help us understand and evaluate your feature request.
+        Before submitting a feature request, please make sure to search through [the existing and past issues](https://github.com/AOSSIE-Org/Resonate-Backend/issues?q=is%3Aissue+sort%3Acreated-desc)
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Describe the feature or improvement
+      description: what 
+      placeholder: e.g., docs/CONTRIBUTING.md or https://resonate.readthedocs.io/en/latest/CONTRIBUTING.html
+    validations:
+      required: true  
+
+  - type: textarea
+    id: what_is_wrong
+    attributes:
+      label: What is wrong or could be improved?
+      description: describe what is wrong or could be improved in the documentation.
+      placeholder: Description of the issue or improvement.
+    validations:
+      required: true     
+
+  - type: textarea
+    id: prposed_change
+    attributes:
+      label: Proposed change or improvement
+      description: paste or describe the proposed change or improvement.
+      placeholder: suggested change or improvement.
+    validations:
+      required: true       
+  
+  - type: textarea
+    id: references
+    attributes:
+      label: References or examples
+      description: links to relevant resources, examples, or references that support your proposed change or improvement.
+      placeholder: optional references or examples.
+    validations:
+      required: true  
+      
+
